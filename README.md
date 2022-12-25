@@ -1,6 +1,8 @@
 # A14 電商網頁切版
 
 此份作業是 Alphacamp 學期 2-3 A14 電商網頁切版 練習
+靜態網頁連結
+https://jie-hua-bao.github.io/A14/index.html
 
 ## 桌機版
 
