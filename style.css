@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional");
 /* css reset */
 *,
 *::before,
@@ -41,7 +42,7 @@ li {
 
 a {
   text-decoration: none;
-  color:#000;
+  color: #000;
 }
 
 .container {
@@ -74,40 +75,79 @@ a {
 }
 
 /* end css reset */
-header{
+header {
   position: fixed;
-  top:0;
+  top: 0;
   z-index: 999;
   width: 100%;
-  height: 45px;
-
+  height: 30px;
 }
-.navbar{
+.navbar {
   position: relative;
-  top:0;
-  padding-top: 0.5rem;
+  top: 0;
   margin: 0 auto;
+  padding-top: 0.5rem;
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.shop-logo-link{
+.shop-logo-link {
   display: flex;
   align-items: center;
-  
+  font-size: 0.8rem;
+  vertical-align: middle;
 }
-.shop-logo-img{
-  height: 35px;
-  margin-right: 0.5rem;
+.shop-logo-img {
+  height: 30px;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
-.tshirt-category{
+.tshirt-category {
   display: none;
 }
-i{
+i {
   font-size: 25px;
 }
-.heart-icon{
+sup {
+  font-size: 10px;
+}
+.heart-icon {
   margin-right: 0.5rem;
 }
+.header-bottom {
+  position: relative;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  top: 45px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+.shop-container-title{
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+.select-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+select{
+  width: 45%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+.t-shirt-size{
+  margin-right: 15px;
+}
+
+
 
