@@ -11,6 +11,7 @@
 
 ## 手機版
 <img src="./img/phone.png">
+<<<<<<< HEAD
 
 
 
@@ -20,3 +21,9 @@
 - HTML5
 - Font-awesome V6.2.1
 
+=======
+## 開發環境與工具 <br>
+- Visual Studio Code <br>
+- HTML5 <br>
+- CSS3 <br>
+>>>>>>> 527bdaa79dcc0535f2f867cf7911f7b4a328582f
