@@ -11,7 +11,6 @@
 
 ## 手機版
 <img src="./img/phone.png">
-<<<<<<< HEAD
 
 
 
