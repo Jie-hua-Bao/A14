@@ -1,7 +1,113 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=PT+Sans:wght@400;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
+/* css reset */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f6f7f8;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  line-height: 0.9;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color:#000;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto 3rem auto;
+}
+
+/*共用按鈕樣式*/
+.action {
+  color: white;
+  background: #39bae6;
+  border-radius: 0.25rem;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  transition: all 0.1s linear;
+}
+
+.action:hover {
+  background: #267c99;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(87, 87, 87, 1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(87, 87, 87, 1);
+  box-shadow: 0px 1px 5px 0px rgba(87, 87, 87, 1);
+}
+
+.background-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* end css reset */
+header{
+  position: fixed;
+  top:0;
+  z-index: 999;
+  width: 100%;
+  height: 45px;
+
+}
+.navbar{
+  position: relative;
+  top:0;
+  padding-top: 0.5rem;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop-logo-link{
+  display: flex;
+  align-items: center;
+  
+}
+.shop-logo-img{
+  height: 35px;
+  margin-right: 0.5rem;
+}
+.tshirt-category{
+  display: none;
+}
+i{
+  font-size: 25px;
+}
+.heart-icon{
+  margin-right: 0.5rem;
+}
+
