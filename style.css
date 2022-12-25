@@ -230,7 +230,11 @@ select {
   margin-right: 0;
   text-align: center;
 }
-
+.sub-input:focus,
+.sumbit:focus,
+  select:focus{
+    outline: none; 
+}
 .sumbit {
   width: 25%;
   height: 40px;
@@ -257,6 +261,7 @@ select {
   padding: 5px;
   letter-spacing: 1px;
 }
+
 
 /* after & after */
 .sold-out {
@@ -369,8 +374,4 @@ select {
   .heart-icon{
     margin: 0 1rem;
   }
-
- 
-
-
 }
