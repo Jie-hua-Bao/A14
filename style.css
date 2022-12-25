@@ -13,7 +13,6 @@ body {
 }
 
 body {
-  background-color: #f6f7f8;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 1rem;
   line-height: 1.4;
@@ -81,7 +80,8 @@ header {
   z-index: 999;
   width: 100%;
   height: 40px;
-  -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(245, 244, 244, 0.8);
+  -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
 }
@@ -131,38 +131,111 @@ sup {
   right: 50%;
   transform: translateX(-50%);
 }
-.shop-container-title{
+.shop-container-title {
   font-size: 1.5rem;
   margin: 1.5rem 0;
 }
-.select-list{
+.select-list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
 }
-select{
+select {
   width: 45%;
   height: 40px;
   border-radius: 5px;
   font-size: 1rem;
   margin-top: 15px;
+  background: #fff;
 }
-.t-shirt-size{
+
+.t-shirt-size {
   margin-right: 15px;
 }
-.shop-tshirt-list{
+.shop-tshirt-list {
   width: 100%;
-  padding-top:5rem;
+  padding-top: 5rem;
   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-gap: 1rem;
 }
-.t-shirt-img{
+.t-shirt-img {
+  position: relative;
   width: 100%;
 }
+.shop-item {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.fa-regular.fa-heart.shirt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  font-size: 1.5rem;
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
 
+.shop-quantity {
+  padding-top: 5rem;
+  text-align: center;
+}
+.shop-web-sub {
+  background-color: #ededed;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+.sub-title {
+  text-align: center;
+  padding: 30px 0;
+}
+.sub-script{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto ;
+}
+.sub-input{
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  margin-right: 0;
+  text-align: center;
+}
 
-
+.sumbit{
+  width: 25%;
+  height: 40px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0 25px 25px 0;
+  margin-left: 0;
+  font-weight: 700;
+}
+.sub-policy{
+  font-size: 1rem;
+  text-align: center;
+  padding: 30px 0 50px;
+  letter-spacing: 1px;
+}
+.sub-policy-link{
+  text-decoration: underline;
+}
+.shop-footer{
+  font-size: 1rem;
+  text-align: center;
+  background-color: #dedede;
+  padding: 5px;
+  letter-spacing: 1px;
+}
 
 
