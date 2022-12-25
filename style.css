@@ -233,7 +233,7 @@ select {
 .sub-input:focus,
 .sumbit:focus,
   select:focus{
-    outline: none; 
+    outline: none;
 }
 .sumbit {
   width: 25%;
