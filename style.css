@@ -74,16 +74,16 @@ a {
 }
 
 /* end css reset */
+
+/* phone */
+
 header {
   position: fixed;
   top: 0;
   z-index: 999;
   width: 100%;
   height: 40px;
-  background: rgb(245, 244, 244, 0.8);
-  -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255, 0.8);
 }
 .navbar {
   position: relative;
@@ -106,7 +106,9 @@ header {
   margin-right: 1rem;
   vertical-align: middle;
 }
-.tshirt-category {
+
+.tshirt-category,
+.serach-icon.serach-icon-lg {
   display: none;
 }
 i {
@@ -162,10 +164,7 @@ select {
   justify-items: center;
   grid-gap: 1rem;
 }
-.t-shirt-img {
-  position: relative;
-  width: 100%;
-}
+
 .shop-item {
   position: relative;
   text-align: center;
@@ -175,11 +174,30 @@ select {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 5;
   font-size: 1.5rem;
   background-color: #fff;
   border: 5px solid #fff;
   border-radius: 50%;
+}
+.tshirt-img-div {
+  position: relative;
+  width: 100%;
+}
+
+.t-shirt-img {
+  width: 100%;
+}
+.t-shirt-img.model {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .shop-quantity {
@@ -194,15 +212,17 @@ select {
 .sub-title {
   text-align: center;
   padding: 30px 0;
+  font-size: 1rem;
+  line-height: 25px;
 }
-.sub-script{
+.sub-script {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
-.sub-input{
+.sub-input {
   width: 70%;
   height: 40px;
   border: none;
@@ -211,7 +231,7 @@ select {
   text-align: center;
 }
 
-.sumbit{
+.sumbit {
   width: 25%;
   height: 40px;
   border: none;
@@ -221,21 +241,136 @@ select {
   margin-left: 0;
   font-weight: 700;
 }
-.sub-policy{
-  font-size: 1rem;
+.sub-policy {
+  font-size: 0.7rem;
   text-align: center;
   padding: 30px 0 50px;
   letter-spacing: 1px;
 }
-.sub-policy-link{
+.sub-policy-link {
   text-decoration: underline;
 }
-.shop-footer{
-  font-size: 1rem;
+.shop-footer {
+  font-size: 0.8rem;
   text-align: center;
   background-color: #dedede;
   padding: 5px;
   letter-spacing: 1px;
 }
 
+/* after & after */
+.sold-out {
+  text-decoration: line-through;
+  font-weight: 400;
+}
+.sold-out::before {
+  content: "Sold Out";
+  text-decoration: none;
+  margin-right: 0.3rem;
+}
 
+/* hover */
+.shop-item:hover .t-shirt-img.model {
+  opacity: 1;
+}
+@media screen and (min-width: 600px) {
+  .select-list {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  select {
+    width: 100%;
+  }
+  .t-shirt-size,
+  .t-shirt-color {
+    margin-right: 2rem;
+  }
+  .shop-tshirt-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  .sub-info {
+    background-image: url("./img/05.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .sub-script {
+    width: 60%;
+  }
+  .serach-icon.serach-icon-lg{
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  header {
+    height: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 2px 12px 0px rgba(247, 243, 243, 0.2);
+  }
+  .header-bottom {
+    padding-top: 5rem;
+  }
+  .select-list {
+    width: 50%;
+  }
+  .shop-tshirt-list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+  .shop-container-title {
+    font-size: 2.5rem;
+  }
+  .fa-regular.fa-heart.shirt {
+    font-size: 2.5rem;
+  }
+  .sub-script {
+    width: 50%;
+  }
+  .shop-web-sub {
+    width: 80%;
+  }
+  .navbar {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .serach-icon {
+    display: none;
+  }
+  .tshirt-category {
+    display: flex;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .tshirt-category h2 {
+    margin-right: 5rem;
+  }
+  .icon-list {
+   display: flex;
+  }
+  .container {
+    width: 65%;
+    padding-top: 5rem;
+  }
+  .shop-logo-img {
+    height: 50px;
+  }
+  .shop-logo-title h2{
+    font-size: 1.5rem;
+  }
+  .navbar i {
+    font-size: 30px;
+  }
+  .serach-icon.serach-icon-lg{
+    display: block;
+  }
+  .heart-icon{
+    margin: 0 1rem;
+  }
+
+ 
+
+
+}
