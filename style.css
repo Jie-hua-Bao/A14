@@ -232,8 +232,8 @@ select {
 }
 .sub-input:focus,
 .sumbit:focus,
-  select:focus{
-    outline: none;
+select:focus {
+  outline: none;
 }
 .sumbit {
   width: 25%;
@@ -262,7 +262,6 @@ select {
   letter-spacing: 1px;
 }
 
-
 /* after & after */
 .sold-out {
   text-decoration: line-through;
@@ -277,6 +276,10 @@ select {
 /* hover */
 .shop-item:hover .t-shirt-img.model {
   opacity: 1;
+  cursor: pointer;
+}
+.sumbit {
+  cursor: pointer;
 }
 @media screen and (min-width: 600px) {
   .select-list {
@@ -304,7 +307,7 @@ select {
   .sub-script {
     width: 60%;
   }
-  .serach-icon.serach-icon-lg{
+  .serach-icon.serach-icon-lg {
     display: none;
   }
 }
@@ -353,7 +356,7 @@ select {
     margin-right: 5rem;
   }
   .icon-list {
-   display: flex;
+    display: flex;
   }
   .container {
     width: 65%;
@@ -362,16 +365,16 @@ select {
   .shop-logo-img {
     height: 50px;
   }
-  .shop-logo-title h2{
+  .shop-logo-title h2 {
     font-size: 1.5rem;
   }
   .navbar i {
     font-size: 30px;
   }
-  .serach-icon.serach-icon-lg{
+  .serach-icon.serach-icon-lg {
     display: block;
   }
-  .heart-icon{
+  .heart-icon {
     margin: 0 1rem;
   }
 }
