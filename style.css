@@ -318,7 +318,7 @@ select:focus {
     box-shadow: 0px 2px 12px 0px rgba(247, 243, 243, 0.2);
   }
   .header-bottom {
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
   .select-list {
     width: 50%;
@@ -359,8 +359,9 @@ select:focus {
     display: flex;
   }
   .container {
-    width: 65%;
-    padding-top: 5rem;
+    max-width: 1600px;
+    width: 90%;
+    padding-top: 3rem;
   }
   .shop-logo-img {
     height: 50px;
@@ -374,7 +375,13 @@ select:focus {
   .serach-icon.serach-icon-lg {
     display: block;
   }
+  .fa-regular.fa-heart.shirt {
+    font-size: 1.3rem;
+  }
   .heart-icon {
     margin: 0 1rem;
+  }
+  .shop-container-title{
+    font-size: 1.5rem;
   }
 }
